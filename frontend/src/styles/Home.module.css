@@ -1,0 +1,106 @@
+.inboxView {
+  height: 100vh;
+  min-width: 640px;
+  overflow-x: auto;
+  font-family: "System-ui", sans-serif;
+}
+
+.inboxContainer {
+  flex: 3;
+  overflow-y: auto;
+  height: 100vh;
+  min-width: 360px;
+}
+
+.inboxContent {
+  width: 90%;
+  min-width: 400px;
+}
+
+.messageContainer {
+  display: flex;
+  flex: 7;
+  align-items: center;
+  background: #fff;
+  justify-content: center;
+  overflow-y: auto;
+  height: 100vh;
+  border-left: 1px solid #e0e0e0;
+}
+
+.inboxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+
+.inboxList {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.inboxListItem {
+  display: flex;
+  flex-direction: column;
+  height: 64px;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.inboxListItemHeader {
+  justify-content: space-between;
+  color: black;
+}
+
+.inboxItemTo {
+  & > strong {
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.inboxSentDate {
+  color: #666;
+  font-size: 12px;
+}
+
+
+.inboxItemSubject {
+  color: #666;
+}
+
+.inboxListItem:hover {
+  background-color: #f5f5f5;
+}
+
+.inboxBodyText {
+  font-size: 13px;
+  color: #2e2e2e;
+}
+
+.noEmailSelected {
+  font-size: 24px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.noEmailsFound {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #666666;
+}
+
+.sendEmailBtn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+}
